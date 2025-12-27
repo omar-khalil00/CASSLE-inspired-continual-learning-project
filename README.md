@@ -17,6 +17,14 @@ Original paper:
 
 > Note: This is **not an official implementation**. It explores similar ideas using different architectures, datasets, and training setups.
 
+## Pipeline
+
+**MAE**  
+![MAE](MAE_pipeline.png)
+
+**RotNet**  
+![RotNet](RotNet_Pipeline.png)
+
 ## Method
 - Train MAE and RotNet models on continual learning tasks  
 - Compare **distillation vs no distillation**  
@@ -27,14 +35,12 @@ Original paper:
 ### Plots
 
 **Accuracy Comparison**  
-![Accuracy](results/plots/accuracy_comparison.png)
+![Accuracy](Accuracy.png)
 
 **Forgetting Comparison**  
-![Forgetting](results/plots/forgetting_comparison.png)
+![Forgetting](Forgetting.png)
 
 ## Key Observations
-- Distillation consistently reduces forgetting and improves average accuracy.  
-- MAE shows stronger improvements than RotNet on CIFAR-100.  
-- Pretraining stabilizes learning and boosts performance on ImageNet subsets.  
+The experiments highlight that RotNet is a highly promising SSL backbone for continual learning. On CIFAR-100, it shows very low forgetting even without distillation, and on ImageNet-100, CASSEL distillation further improves stability. MAE, while benefiting from distillation, is more prone to forgetting due to its transformer-based architecture. These results suggest that simpler CNN-based SSL models can be highly effective for continual learning, providing a strong baseline and lower computational requirements than transformer-based models. 
 
 
