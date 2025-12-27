@@ -20,10 +20,10 @@ Original paper:
 ## Pipeline
 
 **MAE**  
-![MAE](MAE_pipeline.png)
+<img src="MAE_pipeline.PNG" alt="MAE" width="600">
 
 **RotNet**  
-![RotNet](RotNet_Pipeline.png)
+<img src="RotNet_Pipeline.PNG" alt="RotNet" width="600">
 
 ## Method
 - Train MAE and RotNet models on continual learning tasks  
@@ -31,15 +31,13 @@ Original paper:
 - Evaluate using **average accuracy** and **forgetting metrics**  
 - Analyze the effect of pretraining (ImageNet / Places)  
 
-
 ### Plots
 
 **Accuracy Comparison**  
-![Accuracy](Accuracy.png)
+<img src="Accuracy.png" alt="Accuracy" width="600">
 
 **Forgetting Comparison**  
-![Forgetting](Forgetting.png)
-
+<img src="Forgetting.png" alt="Forgetting" width="600">
 ## Key Observations
 The experiments highlight that RotNet is a highly promising SSL backbone for continual learning. On CIFAR-100, it shows very low forgetting even without distillation, and on ImageNet-100, CASSEL distillation further improves stability. MAE, while benefiting from distillation, is more prone to forgetting due to its transformer-based architecture. These results suggest that simpler CNN-based SSL models can be highly effective for continual learning, providing a strong baseline and lower computational requirements than transformer-based models. 
 
