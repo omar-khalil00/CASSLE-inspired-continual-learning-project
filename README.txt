@@ -37,7 +37,4 @@ Original paper:
 - MAE shows stronger improvements than RotNet on CIFAR-100.  
 - Pretraining stabilizes learning and boosts performance on ImageNet subsets.  
 
-## Usage
-1. Clone the repository:  
-```bash
-git clone <repo-url>
+
